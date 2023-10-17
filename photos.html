@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        body {
+          margin: 0;
+          font-family: Arial;
+        }
+        
+        .header {
+          text-align: center;
+          padding: 32px;
+        }
+        
+        .row {
+          display: -ms-flexbox; /* IE10 */
+          display: flex;
+          -ms-flex-wrap: wrap; /* IE10 */
+          flex-wrap: wrap;
+          padding: 0 4px;
+        }
+        
+        /* Create four equal columns that sits next to each other */
+        .column {
+          -ms-flex: 25%; /* IE10 */
+          flex: 25%;
+          max-width: 25%;
+          padding: 0 4px;
+        }
+        
+        .column img {
+          margin-top: 8px;
+          vertical-align: middle;
+          width: 100%;
+        }
+        
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 800px) {
+          .column {
+            -ms-flex: 50%;
+            flex: 50%;
+            max-width: 50%;
+          }
+        }
+        
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+          .column {
+            -ms-flex: 100%;
+            flex: 100%;
+            max-width: 100%;
+          }
+        }
+        </style>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fanpage: Hyun Dojo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">Hyun Fanpage</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="statistics.html">Statistics</a></li>
+        <li class="active"><a href="photos.html">Extras</a></li>
+      </ul>
+    </div>
+  </nav>
+    <div class="title">
+        <h1>Fanpage : Hyun Dojo</h1>
+    </div>
+    <div class="subtitle">
+        <h2>Some Extras</h2>
+    </div>
+    <div class="row">
+        <div class="column">
+        <figure>
+          
+        <figcaption><a href="https://www.hyunsdojo.com/" target="_blank"><img src="img/hyunwebsite.png">Hyun's Website</a></figcaption>
+        </figure>    
+        </div>
+    <div class="column">
+    <figure> 
+    <figcaption><a href="https://shop.hyunsdojo.com/" target="_blank"><img src="img/hyunshop.png">Hyun's Shop</a></figcaption> 
+    </figure>   
+    </div>
+    <div class="column">
+    <figure>
+    <figcaption><a href="https://www.hyunsdojo.com/dojo/19612/" target="_blank"><img src="img/hyunvideo.png">Hyun Sample Video</a></figcaption>  
+    </figure>   
+    </div>
+    </div>
+    
+</body>
+</html>
